@@ -1,0 +1,267 @@
+*{ /* pour modifier tout le contenu du site d'un coup */
+margin: 0px; 
+padding: 0px;
+color: black;
+box-sizing: border-box;
+font-family: "Momo Trust Display", sans-serif; /* pour modifier la police */
+font-weight: 400;
+font-style: normal;
+}
+
+body {
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.dark-mode {
+    background-color: rgb(42, 42, 42);
+}
+
+header {
+    background-color: rgb(180, 177, 177);
+    height: 10%; /*reglage de la taille*/
+    display: flex; /*pour centrer les objets*/
+    justify-content: space-evenly; /*pour assurer l'espace entre les boutons*/
+}
+
+.dark-mode header {
+    background-color: rgb(20, 20, 20);
+}
+
+.overlay{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 0;
+    position: absolute;
+}
+
+.overlay.actif{
+    display: block;
+}
+
+
+.menu {
+  margin-top: 87px;
+  position: absolute;
+  z-index: 0;
+  display: block;
+  left: 0;
+  transform: translateX(-250px);
+  transition: 0.4;
+}
+
+.options {
+  z-index: 2;
+  background-color: gray;
+}
+
+.active{
+    width: 250px;
+    height: 100vh;
+    background-color: #CCCCCC;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    transform: translateX(-410px);
+    transition: 0.4s;
+    z-index: 1;
+    left: 410px;
+    position: absolute;
+}
+
+.dark-mode .rectangle_acc,
+.dark-mode .rectangle_gen,
+.dark-mode .rectangle_rel,
+.dark-mode .rectangle_coll,
+.dark-mode .rectangle_abt,
+.dark-mode .rectangle_sem,
+.dark-mode .rectangle_pant,
+.dark-mode .rectangle_cont {
+    background-color: rgb(128, 128, 128);
+    border-top-color: rgb(20, 20, 20);
+    border-bottom-color: rgb(20, 20, 20);
+}
+
+
+
+.rectangle_gen,
+.rectangle_rel,
+.rectangle_sett,
+.rectangle_acc {
+  background-color: gray;
+}
+
+.dark-mode .bord_abt,
+.dark-mode .bord_sem,
+.dark-mode .bord_card,
+.dark-mode .bord_pant,
+.dark-mode .cadre_footer,
+.dark-mode .title_grad,
+.dark-mode .title_pant {
+    background-color: rgb(180, 177, 177);
+    color: rgb(230, 230, 230);
+    border-color: rgb(180, 177, 177);
+}
+
+.dark-mode p1,
+.dark-mode h1,
+.dark-mode a {
+    color: rgb(230, 230, 230);
+}
+
+h1 {
+  color: black;
+}
+
+h2 {
+  margin: 0px;
+  padding-top: 40px;
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 40px;
+  padding: 10px;
+}
+
+h4 {
+  color: black; /* pour changer la couleur du texte */
+  margin: 0px;
+  padding-top: 40px;
+  font-size: 50px;
+}
+.enjoy_sett {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.champion_spell {
+  display: grid; /* pour faire une grille propre */
+  grid-template-columns: repeat(2, 1fr); /* pour faire une grille de 2 colonnes */
+  font-size: 25px;
+}
+
+.champion_spell img {
+  height: 150px;
+  padding-right: 20px;
+}
+
+.champion_spell div {
+  display: flex;
+  align-items: center;
+}
+
+.rectangle_sett {
+  width: 100%;
+  height: 85px;
+  background-color: gray;
+  text-align: center;
+  font-size: 35px;
+}
+
+.haut_page {
+  font-size: 24px;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.sett {
+  text-align: center;
+  margin: auto;
+  font-size: 40px;
+}
+
+.enjoy_sett {
+  text-align: center;
+  justify-content: 0;
+}
+
+.counter_matchup {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-size: 20px;
+}
+
+.counter_matchup img {
+  padding-top: 10px;
+  height: 300px;
+}
+
+.counter_matchup div {
+  padding-right: 35px;
+}
+
+.grit {
+  font-size: 20px;
+  text-align: center;
+}
+
+.grid_skins {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* pour faire un grille de 3 case de long */
+  font-size: 30px;
+  padding-bottom: 100px;
+}
+
+.grid_skins div img {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  height: 300px;
+}
+
+.rectangle_courses {
+  width: 100%;
+  height: 145px;
+  background-color: gray;
+  text-align: center; /* pour alligner le texte */
+  font-size: xx-large;
+}
+
+.rectangle_contact {
+  width: 100%;
+  height: auto; /* pour ajuster la taille automatiquement */
+  background-color: darkgray;
+  text-align: left;
+  padding-left: 20px;
+  font-size: xx-large;
+}
+
+.all_link { 
+  display: flex;
+  justify-content: space-between;
+}
+
+.link img { /* pour modifier tout les éléments qui réponde au critère */
+  width: 80px;
+  padding-right: 20px;
+}
+
+.link div {
+  display: flex;
+  align-items: center;
+}
+
+.piggy img {
+  height: 200px;
+  padding-right: 200px;
+  justify-content: center;
+}
+
+.video {
+  padding-top: 40px;
+}
+
+.dark-mode {
+    background-color: rgb(20, 20, 20);
+    color: rgb(230, 230, 230);
+}
+
+.dark-mode footer {
+    background-color: rgb(20, 20, 20);
+}
